@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cine - Iniciar Sesión</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/inicio.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="#" class="nav-logo">
+                <h2 class="nav-text">🎥 Cine</h2>
+            </a>
+
+            <input type="checkbox" id="menu-toggle" class="menu-toggle" style="display:none;">
+
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="Cartelera.html" class="nav-link">Cartelera</a></li>
+                <li class="nav-item"><a href="Promociones.html" class="nav-link">Promociones</a></li>
+
+            </ul>
+
+            <div class="nav-actions">
+                <a href="./login.html" class="nav-login" title="Iniciar sesion">
+                    <i class="fa-regular fa-user"></i>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="login-container">
+        <div class="login-card">
+            <div class="avatar">
+                <img src="https://cdn-icons-png.flaticon.com/512/1144/1144760.png" alt="User Icon">
+            </div>
+            
+            <h1>¡Bienvenido de vuelta!</h1>
+            <p class="subtitle">Inicia Sesion en tu cuenta de Coffee</p>
+
+            <form>
+                <div class="input-group">
+                    <label>Correo electronico</label>
+                    <input type="email" placeholder="tuemail.com" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Contraseña</label>
+                    <input type="password" placeholder="............" required>
+                </div>
+
+                <div class="options">
+                    <label><input type="checkbox"> Recordarme</label>
+                    <a href="#">¿Olvidé Mi Contraseña?</a>
+                </div>
+
+                <button type="submit" class="btn-login">INICIAR SESION</button>
+            </form>
+
+            <div class="divider">
+                <span>O Continua con</span>
+            </div>
+
+            <div class="social-login">
+                <button type="button" class="social-btn">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" width="16"> Google
+                </button>
+                <button type="button" class="social-btn">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/2021_Facebook_icon.svg" width="16"> Facebook
+                </button>
+            </div>
+            <p class="footer-text">¿No tienes cuenta? <a href="registro.html" style="color: #3498db; text-decoration: none; font-weight: bold;">Registrate aqui</a></p>
+
+            <div class="encryption-info" style="margin-top: 20px; font-size: 0.75rem; color: #bbb; display: flex; align-items: center; justify-content: center; gap: 8px;">
+                <span>🔒Tus datos estan protegidos con encriptacion de nivel empresarial</span>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
