@@ -156,7 +156,7 @@ header .navbar {
 }
 
 
-.nav_link:hover {
+.nav-link:hover {
     color: var(--neg);
     background-color: var(--bl); 
 }

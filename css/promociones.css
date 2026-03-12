@@ -1,15 +1,101 @@
+:root{
+    --neg:#000000;
+    --ro:#ff0000;
+    --bl: #ffff;
+}
+
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
+button  { cursor: pointer; border: none; background: none; }
+img     { width: 100%; }
+ul      { list-style: none; }
+a      { text-decoration: none; }
+
+header { 
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    background-color: var(--neg);
+}
+
+header .navbar { 
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .nav-logo .nav-text {
+    color: var(--ro);
+}
+
+.navbar .nav-menu {
+    display: flex;
+    gap: 10px;
+}
+
+.navbar .nav-menu .nav-link {
+    padding: 10px 18px;
+    color: var(--ro);
+    font-size: large;
+    border-radius: 50px;
+    transition: 0.3s ease;
+}
+.navbar .nav-menu .nav-link:hover {
+    color: var(--neg);
+    background-color: var(--bl);
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.menu-toggle {
+    display: none;
+}
+.pelicula {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.pelicula span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: var(--ro);
+    border-radius: 3px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+
+/* 3. Animacion X cuando el checkbox esta marcado */
+.menu-toggle:checked ~ .nav-menu + .nav-actions .pelicula span:nth-child(1),
+.menu-toggle:checked + .nav-menu + .nav-actions .pelicula span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.menu-toggle:checked ~ .nav-menu + .nav-actions .pelicula span:nth-child(2),
+.menu-toggle:checked + .nav-menu + .nav-actions .pelicula span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle:checked ~ .nav-menu + .nav-actions .pelicula span:nth-child(3),
+.menu-toggle:checked + .nav-menu + .nav-actions .pelicula span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
 body{
-background: linear-gradient(180deg,#111,#000);
-color:white;
+    background-color: #111;
+    color: white;
 }
-
 /* SECCIÓN */
 
 .promo-section{
