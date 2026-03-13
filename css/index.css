@@ -68,14 +68,13 @@ header .navbar {
 }
 
 .pelicula span {
-    display: block;
+    display:flex;
     width: 25px;
     height: 3px;
     background-color: var(--ro);
     border-radius: 3px;
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
-
 
 /* 3. Animacion X cuando el checkbox esta marcado */
 .menu-toggle:checked ~ .nav-menu + .nav-actions .pelicula span:nth-child(1),
@@ -93,13 +92,12 @@ header .navbar {
     transform: translateY(-8px) rotate(-45deg);
 }
 
-.hero-section {
-    background-color: var(--neg);
-    min-height: 100vh;
-}
 
+.hero-section {
+      background-image: radial-gradient(circle, rgb(255, 55, 55), rgb(46, 1, 1), rgb(0, 0, 0));
+}
 .hero-section .section-content {
-    display: flex;
+    display:flex;
     align-items: center;
     min-height: 100vh;
     color: var(--bl);
@@ -109,14 +107,15 @@ header .navbar {
 
 .hero-section .hero-details .title {
     color: var(--ro);
-    font-size: 2.3rem;
-    font-family: "Miniver", sans-serif;
+    font-size: 4.3rem;
+    font-family: "lobster";
 }
 
 .hero-section .hero-details .subtitle {
     margin-top: 8px;
     font-size: 2.3rem;
     max-width: 70%;
+    font-family:'Courier New', Courier, monospace;
 }
 
 .hero-section .hero-details .description {
@@ -143,9 +142,11 @@ header .navbar {
     color:var(--bl);
 }
 
-.hero-section .hero-image-wrapper {
-    max-width: 500px;
-    margin-right: 30px;
+.hero-image-wrapper {
+    width: 500%;
+    height: 500%;
+    max-width: 700px;
+    
 }
 
 .nav-link { 
