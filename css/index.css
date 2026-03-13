@@ -165,7 +165,15 @@ header .navbar {
 .pelicula { 
     display: none;
 }
+.footer-button{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--bl);
+    padding-top: 32px;
+    border-top: 1px solid #ff0000;
+    background-color: var(--neg);
 
+}
 @media (max-width: 768px) {
     .pelicula {
         display: flex;
